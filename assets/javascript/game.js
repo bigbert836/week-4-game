@@ -167,15 +167,15 @@ var characters = [];
 			countAttack = countAttack * 2;
 		}
 		if(countPlayerHP <= 0){
-			$("#comments").html("You attacked " + chosenDefenderName + " for " + countAttack + " damage.<br>" + chosenDefenderName + " attacked you back for " + countCounterAttack + " damage.<br>You Lose!");
+			$("#comments").html("You Lose!");
 			$("#reset").show();
 		}
 		else if(countDefenderHP <= 0 && defenderCount === 0){
-			$("#comments").html("You attacked " + chosenDefenderName + " for " + countAttack + " damage.<br>" + chosenDefenderName + " attacked you back for " + countCounterAttack + " damage.<br>You Win!");
+			$("#comments").html("You Win!");
 			$("#reset").show();
 		}
 		else if(countDefenderHP <= 0){
-			$("#comments").html("You attacked " + chosenDefenderName + " for " + countAttack + " damage.<br>" + chosenDefenderName + " attacked you back for " + countCounterAttack + " damage.<br>Choose another defender.");
+			$("#comments").html("Choose another defender.");
 			defender = false;
 		}
 
