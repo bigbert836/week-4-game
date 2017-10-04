@@ -1,0 +1,111 @@
+html{
+	height: 100%;
+}
+
+body{
+	background-image: url("../images/background.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1{
+	font-size: 250%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+h2{
+	font-size: 150%;
+	text-align: center;
+	margin: 5px;
+}
+
+.characterSelection,
+.characterSelection div,
+.enemies,
+.enemies div{
+	display: inline-block;
+	text-align: center;
+}
+
+.characterSelection{
+	width: 100%;
+}
+
+h1,
+h2,
+h3{
+	color: white;
+}
+
+img{
+	height: 75px;
+}
+
+.characterBox{
+	background-color: white;
+	position: relative;
+	display: inline-block;
+	width: 95px;
+	margin: 5px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+}
+
+.characterSelection .characterBox:hover{
+	border-color: green;
+}
+
+.enemies .characterBox:hover{
+	border-color: red;
+}
+
+#yourCharacter .characterBox{
+	border-color: green;
+	background-color: green;
+	text-align: center;
+}
+
+#yourCharacter,
+.enemies,
+#defender{
+	width: 100%;
+	text-align: center;
+}
+
+button,
+#comments{
+	text-align: center;
+	display: inline-block;
+	margin: 5px;
+}
+
+.buttonCenter{
+	width: 100%;
+	text-align: center;
+}
+
+#defender .characterBox{
+	border-color: red;
+	background-color: red;
+}
+
+.characterName{
+	position: relative;
+	top: 0px;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.characterHP{
+	position: relative;
+	bottom: 0px;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
